@@ -389,10 +389,10 @@ module.exports = function(grunt) {
         if(results)
           cache.files[dest] = JSON.parse(results.ETag);
 
-        if(stats.puts % 5 == 0) {
-          // Periodically update the cache
-          CacheMgr.put(cache);
-        }
+        // if(stats.puts % 5 == 0) {
+        //   // Periodically update the cache
+        //   CacheMgr.put(cache);
+        // }
 
         callback();
       }
